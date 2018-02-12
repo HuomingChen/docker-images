@@ -1,7 +1,8 @@
-version: '2'
+version: '3'
 services:
-  database:
+  oracle-db:
     image: oracle/database:12.2.0.1-ee
+    container_name: oracle-12.2-ee
     volumes:
       - /home/oracle/oradata:/opt/oracle/oradata # persistent oracle database data.
     ports:
